@@ -14,11 +14,11 @@ from django.core.wsgi import get_wsgi_application
 
 from whitenoise.django import DjangoWhiteNoise
 
-path = "/home/taylorculver/deploying_django-master/djangogoal"
+path = "/home/taylorculver/deploying_django-master/djangoal"
 if path not in sys.path:
     sys.path.append(path)
 
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "djangoal.settings")
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "djangoal.deploy_settings")
 
 application = get_wsgi_application()
 application = DjangoWhiteNoise(application)
